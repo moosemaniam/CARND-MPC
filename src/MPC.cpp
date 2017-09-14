@@ -99,6 +99,9 @@ class FG_eval {
         if (t > 1) {
           /* previous actuations */
 
+          /* Apply actuators to one timestamp later
+           * Hence the -2 instead of -1
+           * */
           a = vars[a_start + t - 2];
 
           delta = vars[delta_start + t - 2];
